@@ -1,4 +1,10 @@
-vendor/
+vendor/composer
+vendor/kevinsperrine
+vendor/pimple
+vendor/silex
+vendor/symfony
+vendor/twig
+vendor/autoload.php
 composer.lock
 composer.phar
 views/index_pof.twig
