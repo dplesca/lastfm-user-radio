@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Last.fm Radio</title>
+  <link rel="stylesheet" type="text/css" href="/css/foundation.min.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/functional.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/style.css" media="all">
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/jquery.form.js"></script>
+  <script src="/js/flowplayer.min.js"></script>
+</head>
+<body>
+
+	<nav class="top-bar">
+		<ul>
+			<li class="name">
+				<h1><a href="#">last.fm user radio</a></h1>
+			</li>
+			<li class="toggle-topbar"><a href="#"></a></li>
+		</ul>
+	</nav>
+	<div class="row">
+
+		<div class="nine columns">
+
+			<h3>Ecoute</h3>
+			<form action="/start" method="post" id="start">
+			<div class="row collapse">
+				<div class="four columns"><label class="inline">Your last.fm username</label></div>
+				<div class="eight columns"><input type="text" id="username" name="username" placeholder="last.fm username" /></div>
+			</div>
+
+			<button type="submit" class="radius button">Submit</button>
+			</form>
+
+			<div class="playaaa"></div>
+		</div>
+
+		<div class="three columns"></div>
+	</div>
+
+	<footer class="row"></footer>
+	<script>
+		$(function(){
+			$('#start').ajaxForm({
+				dataType: 'json',
+				success: function(response){
+					
+				}
+			});
+		});
+	</script>
+</body>
+</html>
