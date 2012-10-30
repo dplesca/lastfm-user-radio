@@ -46,7 +46,13 @@
 			$('#start').ajaxForm({
 				dataType: 'json',
 				success: function(response){
-					
+					$('.playaaa').append('<video><source type="video/mp4" src="' + response.url + '"</video>').flowplayer();
+					flowplayer().bind("finish", function(e, api) { 
+					   $.post('/start', {username: $('#username').val()}, function(replay_response){
+					   		console.log(replay_response.url);
+					   		api.load(replay_response.url);
+					   }, 'json')			 
+					});
 				}
 			});
 		});
