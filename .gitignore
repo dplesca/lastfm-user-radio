@@ -1,11 +1,5 @@
-vendor/composer
-vendor/kevinsperrine
-vendor/pimple
-vendor/silex
-vendor/symfony
-vendor/twig
-vendor/autoload.php
-composer.lock
+vendor
 composer.phar
-views/index_pof.twig
-web/log
+composer.lock
+.DS_Store
+phpunit.xml

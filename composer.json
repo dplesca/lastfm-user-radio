@@ -1,8 +1,15 @@
 {
-    "require": {
-        "silex/silex": "1.0.*",
-        "kevinsperrine/idiorm": "dev-master",
-        "twig/twig": ">=1.8,<2.0-dev"
-    },
-    "minimum-stability": "dev"
+	"require": {
+		"illuminate/foundation": "1.2.*",
+		"rmccue/requests": "dev-master"
+	},
+	"autoload": {
+		"classmap": [
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/tests/TestCase.php"
+		]
+	},
+	"minimum-stability": "dev"
 }
